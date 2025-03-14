@@ -5,12 +5,10 @@ project(Moving_Ball)
 #设置c++标准
 set(CMAKE_CXX_STANDARD 17)
 
-add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/source-charset:utf-8>")
-
-add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/execution-charset:gbk>")
+add_compile_options(/source-charset:utf-8 /execution-charset:utf-8)
 
 #设置OpenCV路径
-set(OpenCV_DIR "D:\\Program Files\\OpenCV\\opencv\\build\\x64\\vc16\\lib")
+set(OpenCV_DIR "D:\\Tools\\OpenCV\\opencv\\build\\x64\\vc16\\lib")
 
 find_package(OpenCV REQUIRED)
 
